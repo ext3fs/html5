@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt</title>
+</head>
+
+<body>
+    <script>
+        // const name = prompt("이름을 입력하세요.", "아무개");
+        // alert("hellow" + name);
+        // alert(`hellow ${name}`);
+        // const isAdult = confirm("are you adult?");
+        // alert(isAdult);
+        // let age = null;
+        // alert(age);
+
+        // const ilyoung = {
+        //     hair: 'black',
+        //     age: 20
+        // };
+
+        // const miyoung = {
+        //     hair: 'red',
+        // };
+
+        // console.log(ilyoung);
+        // console.log(miyoung);
+
+        // function isAdult(man) {
+        //     if (man.age === undefined || man.age < 20)
+        //         return false;
+        //     return true;
+        // }
+
+        // console.log(isAdult(miyoung));
+
+        // for (key in miyoung) {
+        //     console.log(miyoung[key]);
+        // }
+
+        const ilyoung = {
+            hair: 'black',
+            age: 20,
+            sound() {
+                console.log(this.age);
+            }
+        };
+
+        ilyoung.sound();
+    </script>
+</body>
+
+</html>
