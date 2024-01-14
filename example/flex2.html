@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around; /* 교차축 배치방법 */
+            align-items: center; /* 주축 배치방법 */
+            flex-wrap: wrap; /* 컨테이너를 넘어갔을때 처리방법 */
+        }
+
+        .item {
+            width: 60px;
+            height: 60px;
+            background-color: tomato;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .self {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <!-- <div class="item self">2</div> -->
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
